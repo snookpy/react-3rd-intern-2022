@@ -1,5 +1,6 @@
 import useGetPost from "../../hooks/useGetPost/useGetPost";
 import PostDetail from "../../components/PostDetail/PostDetail";
+import CreatePostForm from "../../components/CreatePostForm/CreatePostForm";
 
 function PostsPage() {
   const { loading, posts } = useGetPost();
@@ -7,6 +8,7 @@ function PostsPage() {
   return (
     <>
       <h1>Post Page</h1>
+      <CreatePostForm />
       <div
         style={{
           display: "flex",
