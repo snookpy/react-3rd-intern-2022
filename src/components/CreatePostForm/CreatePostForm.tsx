@@ -27,10 +27,6 @@ function CreatePostForm() {
     }}>
         {mutate.isLoading && 'Creating Post...'}
         <form onSubmit={handleSubmit(onSubmit, onError)}>
-            <input 
-                type={'hidden'} 
-                value={1} 
-            />
             <div>
                 <label>Title: </label>
                 <input type="text" {...register('title')} />
